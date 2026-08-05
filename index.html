@@ -10,34 +10,38 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Abilene Vibes home"><img class="brand-logo" src="assets/images/abilene-vibes-logo.jpg.jpg" alt="Abilene Vibes logo" /></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span></span><span></span><span></span></button>
+    <header class="site-header" data-site-header>
+      <a class="brand" href="index.html" aria-label="Abilene Vibes home"><img class="brand-logo" src="assets/images/abilene-vibes-logo.jpg.jpg" width="1440" height="1478" alt="Abilene Vibes logo" decoding="async" /></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#explore">Explore</a>
-        <a href="index.html#promote">Promote</a>
-        <a href="index.html#screenshots">Screenshots</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="#explore">Discover</a>
+        <a href="#screenshots">App</a>
+        <a href="#businesses">Businesses</a>
+        <a href="#about">City</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#promote">Promote</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-content">
-          <p class="eyebrow">Abilene Vibes</p>
-          <h1><span>Discover</span><span>the best</span><span>of Abilene.</span></h1>
-          <p class="hero-copy">Local businesses, events, restaurants, shopping, jobs, rentals, marketplace, and community - all in one place.</p>
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/images/downtown-abilene.jpg.jpg" width="1317" height="991" alt="" />
+        </div>
+        <div class="hero-content reveal-on-load">
+          <p class="eyebrow">THE OFFICIAL LOCAL GUIDE TO ABILENE</p>
+          <h1>Abilene Vibes</h1>
+          <p class="hero-kicker">Your city. Your style. Your vibes.</p>
+          <p class="hero-copy">Discover events, local businesses, food, rentals, jobs, shopping, and the experiences that make Abilene feel like home.</p>
           <div class="hero-actions">
-            <button class="btn btn-muted" type="button" aria-disabled="true">Coming Soon on Google Play</button>
             <a class="btn btn-primary" href="#promote">Promote Your Business</a>
+            <a class="btn btn-muted" href="#screenshots">Explore the App</a>
           </div>
         </div>
-        <div class="hero-visual" aria-label="Paramount Theatre in Abilene">
-          <figure class="hero-photo-frame">
-            <img src="assets/images/hero-paramount.jpg" alt="Paramount Theatre in Abilene" />
+        <div class="hero-visual reveal-on-load">
+          <figure class="hero-phone" aria-label="Abilene Vibes home screen preview">
+            <div class="hero-phone-camera" aria-hidden="true"></div>
+            <img src="assets/screenshots/home.png.jpg" width="720" height="1387" alt="Abilene Vibes home screen preview" decoding="async" />
           </figure>
         </div>
       </section>
@@ -60,6 +64,61 @@
           <article class="explore-card explore-jobs"><h3>Jobs & Hiring</h3><p>Discover local job posts, hiring opportunities, and employer listings.</p></article>
           <article class="explore-card explore-rentals"><h3>Rentals</h3><p>Find rental listings, property details, and local housing opportunities.</p></article>
           <article class="explore-card explore-directory"><h3>Business Directory</h3><p>Explore local businesses by category, visibility, and community relevance.</p></article>
+        </div>
+      </section>
+
+      <section class="section businesses" id="businesses">
+        <div class="businesses-experience">
+          <div class="businesses-story reveal-section">
+            <p class="eyebrow">Experience Abilene</p>
+            <h2>A city you can taste, explore, and make your own.</h2>
+            <p>Local discovery should feel like stepping into the best version of the city, not scanning a directory.</p>
+          </div>
+
+          <div class="business-scene scene-experience reveal-section" aria-label="Experience Abilene categories">
+            <article class="scene-card scene-large" tabindex="0"><img src="assets/businesses/eats.jpg" alt="Elegant restaurant dining atmosphere" loading="lazy" decoding="async" /><div><span>Eats</span></div></article>
+            <article class="scene-card scene-portrait" tabindex="0"><img src="assets/businesses/shopping.jpg" alt="Modern boutique shopping interior" loading="lazy" decoding="async" /><div><span>Shopping</span></div></article>
+            <article class="scene-card scene-wide" tabindex="0"><img src="assets/businesses/nightlife.jpg" alt="Nightlife scene with music and lights" loading="lazy" decoding="async" /><div><span>Nightlife</span></div></article>
+            <article class="scene-card scene-portrait" tabindex="0"><img src="assets/businesses/groceries.jpg" alt="Modern grocery shopping aisle" loading="lazy" decoding="async" /><div><span>Groceries</span></div></article>
+          </div>
+
+          <div class="scene-heading reveal-section">
+            <p class="eyebrow">Essential Services</p>
+            <h3>The practical side of the city can still feel polished.</h3>
+          </div>
+          <div class="business-ribbon reveal-section" aria-label="Essential Services categories">
+            <article class="ribbon-card" tabindex="0"><img src="assets/businesses/health.jpg" alt="Modern healthcare clinic interior" loading="lazy" decoding="async" /><span>Health</span></article>
+            <article class="ribbon-card" tabindex="0"><img src="assets/businesses/insurance.jpg" alt="Professional advisory meeting" loading="lazy" decoding="async" /><span>Insurance</span></article>
+            <article class="ribbon-card" tabindex="0"><img src="assets/businesses/dealers.jpg" alt="Modern automotive showroom" loading="lazy" decoding="async" /><span>Dealers</span></article>
+            <article class="ribbon-card" tabindex="0"><img src="assets/businesses/barber-beauty.jpg" alt="Premium salon and beauty service" loading="lazy" decoding="async" /><span>Barber & Beauty</span></article>
+          </div>
+
+          <div class="scene-heading reveal-section">
+            <p class="eyebrow">Live Here</p>
+            <h3>Abilene feels easier to imagine when the essentials are beautiful.</h3>
+          </div>
+          <div class="business-living reveal-section" aria-label="Live Here categories">
+            <article class="living-card living-campus" tabindex="0"><img src="assets/businesses/schools.jpg" alt="Beautiful school or college campus" loading="lazy" decoding="async" /><span>Schools</span></article>
+            <article class="living-card" tabindex="0"><img src="assets/businesses/sports-fitness.jpg" alt="Modern fitness gym" loading="lazy" decoding="async" /><span>Sports & Fitness</span></article>
+            <article class="living-card" tabindex="0"><img src="assets/businesses/family-kids.jpg" alt="Family enjoying time together outdoors" loading="lazy" decoding="async" /><span>Family & Kids</span></article>
+            <article class="living-card living-home" tabindex="0"><img src="assets/businesses/rentals.jpg" alt="Bright modern apartment building available for local renters" loading="lazy" decoding="async" /><span>Rentals</span></article>
+          </div>
+
+          <div class="scene-heading reveal-section">
+            <p class="eyebrow">Marketplace & Community</p>
+            <h3>The city becomes more connected when everything local is easier to find.</h3>
+          </div>
+          <div class="business-community reveal-section" aria-label="Marketplace and community categories">
+            <article class="community-card" tabindex="0"><img src="assets/businesses/directory.jpg" alt="Local storefronts and small businesses along a commercial street" loading="lazy" decoding="async" /><span>Directory</span></article>
+            <article class="community-card community-tall" tabindex="0"><img src="assets/businesses/jobs-hiring.jpg" alt="Professionals meeting during a hiring conversation" loading="lazy" decoding="async" /><span>Jobs & Hiring</span></article>
+            <article class="community-card" tabindex="0"><img src="assets/businesses/marketplace.jpg" alt="Assorted secondhand items displayed for sale in a local marketplace" loading="lazy" decoding="async" /><span>Marketplace</span></article>
+          </div>
+
+          <div class="businesses-promote-link reveal-section">
+            <p class="eyebrow">Promote Your Business</p>
+            <h3>Ready to be part of what people discover next?</h3>
+            <a class="btn btn-primary" href="#promote">View Promotion Plans</a>
+          </div>
         </div>
       </section>
 
@@ -91,16 +150,16 @@
             <p>Lobby</p>
           </article>
           <article class="phone-preview">
-            <div class="phone-frame" aria-label="Events screenshot placeholder">
+            <div class="phone-frame" aria-label="Service screenshot placeholder">
               <div class="phone-camera" aria-hidden="true"></div>
-              <div class="phone-screen"><img src="assets/screenshots/events.png.jpg" alt="Events screen preview" /></div>
+              <div class="phone-screen"><img src="pagina web screen shos/service.jpg.jpg" alt="Service screen preview" /></div>
             </div>
-            <p>Events</p>
+            <p>Service</p>
           </article>
           <article class="phone-preview">
             <div class="phone-frame" aria-label="Marketplace screenshot placeholder">
               <div class="phone-camera" aria-hidden="true"></div>
-              <div class="phone-screen"><img src="assets/screenshots/marketplace.png.jpg" alt="Marketplace screen preview" /></div>
+              <div class="phone-screen"><img src="pagina web screen shos/naruto-uzumaki.jpg.jpg" alt="Marketplace screen preview" /></div>
             </div>
             <p>Marketplace</p>
           </article>
@@ -112,11 +171,11 @@
             <p>Directory</p>
           </article>
           <article class="phone-preview">
-            <div class="phone-frame" aria-label="Rentals screenshot placeholder">
+            <div class="phone-frame" aria-label="Groceries screenshot placeholder">
               <div class="phone-camera" aria-hidden="true"></div>
-              <div class="phone-screen"><img src="assets/screenshots/rentals.png.jpg" alt="Rentals screen preview" /></div>
+              <div class="phone-screen"><img src="pagina web screen shos/groceries.jpg.jpg" alt="Groceries screen preview" /></div>
             </div>
-            <p>Rentals</p>
+            <p>Groceries</p>
           </article>
         </div>
       </section>
@@ -132,7 +191,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Abilene Vibes</p>
+      <p>&copy; 2026 Abilene Vibes. All Rights Reserved.</p>
       <p>Operated by Abilene Labs</p>
       <nav aria-label="Footer navigation"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="mailto:abilenevibes@gmail.com">Contact</a></nav>
     </footer>
