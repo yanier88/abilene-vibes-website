@@ -165,7 +165,7 @@ h3 { margin: 0 0 0.6rem; }
 .explore-jobs { background-image: url("../assets/explore-backgrounds/jobs-hiring-bg.png"); background-position: center 45%; }
 .explore-rentals { background-image: url("../assets/explore-backgrounds/rentals-bg.png"); background-position: center 47%; }
 .explore-directory { background-image: url("../assets/images/downtown-abilene.jpg.jpg"); background-position: center 52%; }
-.price { color: var(--text) !important; font-size: 2rem; font-weight: 900; }
+.price { color: var(--text) !important; font-size: 2rem; font-weight: 900; white-space: nowrap; }
 .featured { border-color: rgba(34, 211, 238, 0.5); }
 .premium { border-color: rgba(244, 63, 187, 0.55); }
 .stripe-note { color: var(--muted); line-height: 1.6; }
